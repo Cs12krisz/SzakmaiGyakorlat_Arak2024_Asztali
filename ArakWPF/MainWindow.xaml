@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
 
         <DataGrid x:Name="dtgArak" Grid.Row="1" ColumnWidth="*" SelectionChanged="dtgArak_SelectionChanged"/>
-        <Label x:Name="lbTermek" Content="Termék" HorizontalAlignment="Left" Margin="245,17,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbTermek" Content="Termék" HorizontalAlignment="Left" Margin="164,20,0,0" VerticalAlignment="Top" Width="236" HorizontalContentAlignment="Center"/>
         <ProgressBar x:Name="pbAr" HorizontalAlignment="Left" Height="19" Margin="187,48,0,0" VerticalAlignment="Top" Width="168" Maximum="400" Minimum="-400"/>
         <Button x:Name="btnTorles" Content="Törlés" HorizontalAlignment="Left" Margin="430,0,0,0" VerticalAlignment="Center" Click="btnTorles_Click"/>
         <Button x:Name="btnMentes" Content="Mentés" HorizontalAlignment="Left" Margin="515,0,0,0" VerticalAlignment="Center" Click="btnMentes_Click"/>
