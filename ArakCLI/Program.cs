@@ -15,12 +15,42 @@ namespace ArakCLI
             Feladat3();
             Feladat5();
             Feladat6();
+            Feladat6Json();
+        }
+
+        private static void Feladat6Json()
+        {
+            var csokkentettArak = arakCollection.Where(a => a.Valtozas() < 0).ToArray();
+            StreamWriter streamWriterJson = new StreamWriter("Olcsobbak.json");
+            streamWriterJson.WriteLine("[\n");
+            for (int i = 0; i < csokkentettArak.Length; i++)
+            {
+                streamWriterJson.WriteLine("{\n");
+                string kodMezo = $"\"Kod\": \"{csokkentettArak[i].Kod}\",\n";
+                string megnevezesMezo = $"\"Megnevezes\": \"{csokkentettArak[i].Megnevezes}\",\n";
+                string valtozasMezo = $"\"Valtozas\": {Math.Abs(csokkentettArak[i].Valtozas())}\n";
+                streamWriterJson.WriteLine(kodMezo);
+                streamWriterJson.WriteLine(megnevezesMezo);
+                streamWriterJson.WriteLine(valtozasMezo);
+                if (i == csokkentettArak.Length - 1)
+                {
+                    streamWriterJson.WriteLine("}\n");
+                }
+                else
+                {
+                    streamWriterJson.WriteLine("},\n");
+                }
+  
+            }
+            streamWriterJson.WriteLine("\n]");
+            streamWriterJson.Close();
         }
 
         private static void Feladat6()
         {
             var csokkentettArak = arakCollection.Where(a => a.Valtozas() < 0);
             StreamWriter streamWriter = new StreamWriter("Olcsobbak.txt");
+
             foreach (var item in csokkentettArak)
             {
                 streamWriter.WriteLine($"{item.Kod};{item.Megnevezes};{Math.Abs(item.Valtozas())}");
