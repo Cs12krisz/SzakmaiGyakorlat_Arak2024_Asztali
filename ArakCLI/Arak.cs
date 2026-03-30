@@ -30,6 +30,10 @@ namespace ArakCLI
         public string Kod { get;  set; }
         public string Megnevezes { get;  set; }
 
+        public int Valtozas()
+        {
+            return December - Januar;
+        }
 
     }
 }

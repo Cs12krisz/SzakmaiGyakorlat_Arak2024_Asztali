@@ -1,6 +1,8 @@
 ﻿
 
 
+
+
 namespace ArakCLI
 {
     public class Program
@@ -11,6 +13,25 @@ namespace ArakCLI
             Beolvasas();
             Feladat2();
             Feladat3();
+            Feladat5();
+            Feladat6();
+        }
+
+        private static void Feladat6()
+        {
+            var csokkentettArak = arakCollection.Where(a => a.Valtozas() < 0);
+            StreamWriter streamWriter = new StreamWriter("Olcsobbak.txt");
+            foreach (var item in csokkentettArak)
+            {
+                streamWriter.WriteLine($"{item.Kod};{item.Megnevezes};{Math.Abs(item.Valtozas())}");
+            }
+            streamWriter.Close();
+        }
+
+        private static void Feladat5()
+        {
+            var legnagyobbEmelkedettAr = arakCollection.MaxBy(a => a.Valtozas());
+            Console.WriteLine($"A legnagyobb mértékben a {legnagyobbEmelkedettAr.Megnevezes} emelkedett, {legnagyobbEmelkedettAr.Valtozas()} Ft-tal.");
         }
 
         private static void Feladat3()
