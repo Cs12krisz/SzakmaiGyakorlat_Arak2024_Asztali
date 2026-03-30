@@ -71,5 +71,15 @@ namespace ArakWPF
                 pbAr.Value = (dtgArak.SelectedItem as Arak).Valtozas();
             }
         }
+
+        private void btnHozzaad_Click(object sender, RoutedEventArgs e)
+        {
+            HozzaadArak hozzaadArak = new HozzaadArak();
+        }
+
+        private void btnModositas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

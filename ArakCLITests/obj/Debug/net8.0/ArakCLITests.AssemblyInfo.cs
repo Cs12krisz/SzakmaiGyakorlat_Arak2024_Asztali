@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArakCLITests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bc820c6a86403fad3ba456a8aeaa46e64aa9f85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0de5b5f09bf82d93c5b7dfaeb50d79486874a97a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArakCLITests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArakCLITests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
