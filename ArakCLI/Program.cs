@@ -56,7 +56,7 @@ namespace ArakCLI
             Console.WriteLine($"Az állományban {arakCollection.Count} db termék található.");
         }
 
-        private static void Beolvasas()
+        public static void Beolvasas()
         {
             StreamReader streamReader = new StreamReader("Arak2024.txt");
             streamReader.ReadLine();

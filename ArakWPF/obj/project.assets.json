@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "ArakCLI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ArakCLI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ArakCLI.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ArakCLI/1.0.0": {
+      "type": "project",
+      "path": "../ArakCLI/ArakCLI.csproj",
+      "msbuildProject": "../ArakCLI/ArakCLI.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "ArakCLI >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\csigerik\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\csigerik\\Desktop\\aztali\\SzakmaiGyakorlat_Arak2024_Asztali\\ArakCLI\\ArakCLI.csproj": {
+              "projectPath": "C:\\Users\\csigerik\\Desktop\\aztali\\SzakmaiGyakorlat_Arak2024_Asztali\\ArakCLI\\ArakCLI.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

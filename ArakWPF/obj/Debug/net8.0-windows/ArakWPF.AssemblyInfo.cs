@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArakWPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bc820c6a86403fad3ba456a8aeaa46e64aa9f85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee1ed4ca4b4fe9516f2b3ff694ff6e35cb04b8b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArakWPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArakWPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
